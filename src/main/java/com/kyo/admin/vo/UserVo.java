@@ -5,9 +5,9 @@ import lombok.Data;
 @Data
 public class UserVo {
 
-    private Integer id;
+    private Long id;
 
-    private Integer rid;
+    private Long rid;
 
     private String username;
 

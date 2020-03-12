@@ -5,7 +5,12 @@ import lombok.Data;
 @Data
 public class ResponseVo<T> {
 
+    private T data;
+
     private MetaVo meta;
 
-    private T data;
+    public ResponseVo(T data, MetaVo meta) {
+        this.data = data;
+        this.meta = meta;
+    }
 }
